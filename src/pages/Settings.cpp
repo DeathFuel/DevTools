@@ -41,6 +41,12 @@ void DevTools::drawSettings() {
             "Makes selecting nodes less annoying."
         );
     }
+    ImGui::Checkbox("Single Click to Select", &m_oneClickSelect);
+    if (ImGui::IsItemHovered()) {
+        ImGui::SetTooltip(
+            "Select nodes with one click as opposed to two."
+        );
+    }
     ImGui::Checkbox("Advanced Settings", &m_advancedSettings);
     if (ImGui::IsItemHovered()) {
         ImGui::SetTooltip(
