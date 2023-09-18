@@ -347,7 +347,7 @@ void DevTools::drawNodeAttributes(CCNode* node) {
 
 void DevTools::drawAttributes() {
     if (!m_selectedNode) {
-        ImGui::TextWrapped("Select a Node to Edit in the Scene or Tree");
+        ImGui::TextWrapped("Select a node");
     } else {
         this->drawNodeAttributes(m_selectedNode);
     }
