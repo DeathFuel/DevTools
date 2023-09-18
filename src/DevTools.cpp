@@ -63,7 +63,6 @@ void DevTools::drawPages() {
         ImGui::DockBuilderDockWindow("###devtools/settings", topLeftDock);
         ImGui::DockBuilderDockWindow("###devtools/advanced/settings", topLeftDock);
         ImGui::DockBuilderDockWindow("###devtools/attributes", bottomLeftTopHalfDock);
-        ImGui::DockBuilderDockWindow("###devtools/preview", leftDock);
         ImGui::DockBuilderDockWindow("###devtools/geometry-dash", id);
         ImGui::DockBuilderDockWindow("###devtools/advanced/mod-graph", topLeftDock);
         ImGui::DockBuilderDockWindow("###devtools/advanced/mod-index", topLeftDock);
@@ -91,11 +90,6 @@ void DevTools::drawPages() {
     this->drawPage(
         U8STR(FEATHER_TOOL " Attributes###devtools/attributes"),
         &DevTools::drawAttributes
-    );
-
-    this->drawPage(
-        U8STR(FEATHER_DATABASE " Preview###devtools/preview"),
-        &DevTools::drawPreview
     );
 
     if (m_showModGraph) {

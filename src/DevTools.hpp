@@ -50,8 +50,6 @@ protected:
     void drawAdvancedSettings();
     void drawNodeAttributes(CCNode* node);
     void drawAttributes();
-    void drawPreview();
-    void drawNodePreview(CCNode* node);
     void drawHighlight(CCNode* node, HighlightMode mode);
     void drawLayoutHighlights(CCNode* node);
     void drawGD(GLRenderCtx* ctx);
